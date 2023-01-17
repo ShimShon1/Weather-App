@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer ></script>
+    <link rel="stylesheet" href="output.css">
+    <title>Weather</title>
+</head>
+<body >
+    <nav class="bg-slate-200 ">
+
+        <div class="p-3 md:p-4 px-5 flex items-center flex-wrap justify-around 2xl:w-1/2 xl:w-3/5">
+
+            <div class="flex items-center space-x-1 self-start ">
+                <img src="./img/title-img.png" class="w-14" alt="site-logo" srcset="">
+                <span>Weather App</span>
+            </div>
+    
+            <button class="bg-slate-100 border border-gray-800 p-1 px-2 text-sm mb-1
+             hover:bg-slate-300 rounded-md md:order-2 ">Celsuis / Fahrenheit</button>
+    
+    
+    
+             <div class="mt-3 flex w-full md:w-auto md:bg-transparent space-x-2 justify-around bg-slate-100 p-2 lg:p-0 md:order-1 md:mt-0">
+                <Label for="search">Search: </Label>
+    
+                    <input class="border border-gray-600 rounded-sm" type="text" id="search">
+    
+                    <button><img class="cursor-pointer" src="img/search.svg" alt=""></button>
+               
+             </div>
+
+
+
+        </div>
+   
+        
+    </nav>
+
+    <!-- Main current temp -->
+    <section class="p-8 border b grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 ">
+
+        <div class="flex flex-col justify-center text-lg  ">
+            <h2 class="ml-5 md:text-2xl "><span>Haifa, IL</span>
+              
+            </h2>
+            <img src="img/sun.png" class="w-28" alt="" srcset="">
+    
+            
+
+        </div>
+
+        <div  class="text-2xl mt-8 ml-2">
+            <h2>32 C°</h2>
+            <span class="text-lg w-full ">Clear</span>
+
+        </div>
+
+        <div class="col-span-2 xl:col-span-1 ml-3  p-1 flex flex-col justify-between">
+            <p class="w-full border-b flex justify-between">Humidity:
+                
+                <span>40%</span>
+            </p>
+            <p class="w-full border-b flex justify-between">Feels Like:
+                
+                <span>34 C°</span>
+            </p>
+            <p class="w-full border-b flex justify-between">Wind Speed:
+                
+                <span>6 K/H</span>
+            </p>
+
+
+        </div>
+    </section>
+
+    <!-- Extra Hours -->
+    <section>
+        <div class="p-8 py-4 border flex just justify-start items-center gap-5">
+            <img src="img/sun.png" class="w-14" alt="" srcset="">
+
+            <div class="w-24 text-xl text-left ">
+
+
+                <h2 class="">9:00:</h2>
+
+            </div>
+
+
+            <div class="flex justify-around text-center w-1/2 gap-3 text-lg">
+                <span>26 C°</span><span> Clear</span>
+
+            </div>
+
+        </div>
+
+     
+        <div class="p-8 py-4 border flex justify-start  items-center gap-5">
+            <img src="img/clouds.png" class="w-14" alt="" srcset="">
+
+            <div class="w-24">
+
+
+                <h2 class="text-xl text-left ">19:00:</h2>
+
+            </div>
+
+
+
+            <div class="flex justify-around text-center w-1/2 gap-3 text-lg ">
+                <span class="w-1/2">8 C°</span><span class="w-1/2"> Clouds</span>
+
+            </div>
+
+        </div>
+
+        
+
+
+
+
+    </section>
+</body>
+</html>
