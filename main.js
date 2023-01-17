@@ -1,0 +1,1 @@
+!async function(){let a=await fetch("https://api.openweathermap.org/data/2.5/forecast?q=Cairo&units=metric&appid=571b06f4d00d62b66717a5e08b78e8bb"),t=await a.json();console.log(Math.round(t.list[3].main.temp),t.list[3].main.temp),console.log(t)}();
