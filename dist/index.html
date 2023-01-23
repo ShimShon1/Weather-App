@@ -11,7 +11,7 @@
 <body >
     <nav class="bg-slate-200 ">
 
-        <div class="p-3 px-5 flex items-center flex-wrap justify-around 2xl:w-1/2 xl:w-3/5 md:p-4">
+        <div class="p-3 px-5 flex items-center flex-wrap justify-around 2xl:w-1/2 xl:w-3/5 md:p-4 relative">
 
             <div class="flex items-center space-x-1 self-start ">
                 <img src="./img/title-img.png" class="w-12" alt="site-logo" srcset="">
@@ -26,24 +26,30 @@
              <div class="mt-3 flex w-full md:w-auto md:bg-transparent space-x-2 justify-around bg-slate-100 p-2 lg:p-0 md:order-1 md:mt-0">
                 <Label for="search">City: </Label>
     
-                    <input class="border border-gray-600 rounded-sm" type="text" id="search">
+                    <input class="border border-gray-600 rounded-sm " type="text" id="search">
+                    
     
                     <button class="search-btn"><img class="cursor-pointer" src="img/search.svg" alt=""></button>
                
              </div>
 
+             <div class="absolute bottom-0 transition text-xs bg-red-500 text-white border error-msg rounded-md px-2 lg:bottom-0.5 lg:text-sm "   >
+                <p>
+                    Location Not Found
+                </p>
 
-
+             </div>
+          
         </div>
    
         
     </nav>
 
     <!-- Main current temp -->
-    <section class="p-8 border b grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 ">
+    <section class="p-8 border b grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 relative lg:pb-12">
 
         <div class="flex flex-col justify-center text-lg  ">
-            <h2 class="ml-5 md:text-2xl location-name">City Not Found</h2>
+            <h2 class="ml-5 md:text-2xl location-name font-medium">City Not Found</h2>
             <img src="img/sun.png" class="w-14 w-28 weather-icon" alt="" srcset="">
     
             
@@ -51,7 +57,7 @@
         </div>
 
         <div  class="text-2xl mt-8 ml-2">
-            <h2 class="temp-text">32 C°</h2>
+            <h2 class="temp-text font-medium">32 C°</h2>
             <span class="state-text text-lg w-full ">Clear</span>
 
         </div>
@@ -72,24 +78,81 @@
 
 
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="p-8 py-4  flex just justify-start 
+        items-center gap-8  z-10  -bottom-7 absolute w-full">
+
+
+
+            <div class="w-14"></div>
+            <div class="w-24 text-lg text-left ">
+                <h2 class="">Time</h2>
+
+            </div>
+
+
+            <div class="flex justify-around  w-1/2 gap-3 text-md  text-center">
+                <span class="lg:w-44">Degrees°</span>
+                <span class="lg:w-44">Skies</span>
+                <span class="hidden lg:block lg:w-44">Humidity</span>
+                <span class="hidden lg:block lg:w-44">Wind Speed</span>
+
+
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- Extra Hours -->
     <section>
 
-        <div class="p-8 py-4 border flex just justify-start items-center gap-5">
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Extra Hours -->
+
+    <div class="p-8 py-4 border border-t-2  flex just justify-start items-center gap-8 relative z-0">
+
+
+
             <img src="img/sun.png" class="w-14" alt="" srcset="">
 
             <div class="w-24 text-xl text-left ">
-
-
                 <h2 class="time-text">9:00:</h2>
 
             </div>
 
 
-            <div class="flex justify-around text-center w-1/2 gap-3 text-lg">
-                <span class="addi-temp">26 C°</span><span class="addi-state"> Clear</span>
+            <div class="flex justify-around  w-1/2 gap-3 text-lg 
+            font-medium text-center">
+                <span class="addi-temp lg:w-44">26 C°</span>
+                <span class="addi-state lg:w-44">Clear</span>
+                <span class="addi-humid hidden lg:block lg:w-44">84%</span>
+                <span class="addi-speed hidden lg:block lg:w-44">3.4</span>
+
 
             </div>
 
@@ -97,137 +160,175 @@
 
      
    
-        <div class="p-8 py-4 border flex just justify-start items-center gap-5">
+  
+        <div class="p-8 py-4 border   flex just justify-start items-center gap-8 relative z-0">
+
+
+
             <img src="img/sun.png" class="w-14" alt="" srcset="">
 
             <div class="w-24 text-xl text-left ">
-
-
                 <h2 class="time-text">9:00:</h2>
 
             </div>
 
 
-            <div class="flex justify-around text-center w-1/2 gap-3 text-lg">
-                <span class="addi-temp">26 C°</span><span class="addi-state"> Clear</span>
+            <div class="flex justify-around  w-1/2 gap-3 text-lg 
+            font-medium text-center">
+                <span class="addi-temp lg:w-44">26 C°</span>
+                <span class="addi-state lg:w-44">Clear</span>
+                <span class="addi-humid hidden lg:block lg:w-44">84%</span>
+                <span class="addi-speed hidden lg:block lg:w-44">3.4</span>
+
 
             </div>
 
         </div>
 
 
-        <div class="p-8 py-4 border flex just justify-start items-center gap-5">
+        <div class="p-8 py-4 border   flex just justify-start items-center gap-8 relative z-0">
+
+
+
             <img src="img/sun.png" class="w-14" alt="" srcset="">
 
             <div class="w-24 text-xl text-left ">
-
-
                 <h2 class="time-text">9:00:</h2>
 
             </div>
 
 
-            <div class="flex justify-around text-center w-1/2 gap-3 text-lg">
-                <span class="addi-temp">26 C°</span><span class="addi-state"> Clear</span>
+            <div class="flex justify-around  w-1/2 gap-3 text-lg 
+            font-medium text-center">
+                <span class="addi-temp lg:w-44">26 C°</span>
+                <span class="addi-state lg:w-44">Clear</span>
+                <span class="addi-humid hidden lg:block lg:w-44">84%</span>
+                <span class="addi-speed hidden lg:block lg:w-44">3.4</span>
+
 
             </div>
 
         </div>
 
+        <div class="p-8 py-4 border   flex just justify-start items-center gap-8 relative z-0">
 
-        <div class="p-8 py-4 border flex just justify-start items-center gap-5">
+
+
             <img src="img/sun.png" class="w-14" alt="" srcset="">
 
             <div class="w-24 text-xl text-left ">
-
-
                 <h2 class="time-text">9:00:</h2>
 
             </div>
 
 
-            <div class="flex justify-around text-center w-1/2 gap-3 text-lg">
-                <span class="addi-temp">26 C°</span><span class="addi-state"> Clear</span>
+            <div class="flex justify-around  w-1/2 gap-3 text-lg 
+            font-medium text-center">
+                <span class="addi-temp lg:w-44">26 C°</span>
+                <span class="addi-state lg:w-44">Clear</span>
+                <span class="addi-humid hidden lg:block lg:w-44">84%</span>
+                <span class="addi-speed hidden lg:block lg:w-44">3.4</span>
+
 
             </div>
 
         </div>
 
+        <div class="p-8 py-4 border   flex just justify-start items-center gap-8 relative z-0">
 
-        <div class="p-8 py-4 border flex just justify-start items-center gap-5">
+
+
             <img src="img/sun.png" class="w-14" alt="" srcset="">
 
             <div class="w-24 text-xl text-left ">
-
-
                 <h2 class="time-text">9:00:</h2>
 
             </div>
 
 
-            <div class="flex justify-around text-center w-1/2 gap-3 text-lg">
-                <span class="addi-temp">26 C°</span><span class="addi-state"> Clear</span>
+            <div class="flex justify-around  w-1/2 gap-3 text-lg 
+            font-medium text-center">
+                <span class="addi-temp lg:w-44">26 C°</span>
+                <span class="addi-state lg:w-44">Clear</span>
+                <span class="addi-humid hidden lg:block lg:w-44">84%</span>
+                <span class="addi-speed hidden lg:block lg:w-44">3.4</span>
+
 
             </div>
 
         </div>
 
+        <div class="p-8 py-4 border   flex just justify-start items-center gap-8 relative z-0">
 
-        <div class="p-8 py-4 border flex just justify-start items-center gap-5">
+
+
             <img src="img/sun.png" class="w-14" alt="" srcset="">
 
             <div class="w-24 text-xl text-left ">
-
-
                 <h2 class="time-text">9:00:</h2>
 
             </div>
 
 
-            <div class="flex justify-around text-center w-1/2 gap-3 text-lg">
-                <span class="addi-temp">26 C°</span><span class="addi-state"> Clear</span>
+            <div class="flex justify-around  w-1/2 gap-3 text-lg 
+            font-medium text-center">
+                <span class="addi-temp lg:w-44">26 C°</span>
+                <span class="addi-state lg:w-44">Clear</span>
+                <span class="addi-humid hidden lg:block lg:w-44">84%</span>
+                <span class="addi-speed hidden lg:block lg:w-44">3.4</span>
+
 
             </div>
 
         </div>
 
-        <div class="p-8 py-4 border flex just justify-start items-center gap-5">
+        <div class="p-8 py-4 border   flex just justify-start items-center gap-8 relative z-0">
+
+
+
             <img src="img/sun.png" class="w-14" alt="" srcset="">
 
             <div class="w-24 text-xl text-left ">
-
-
                 <h2 class="time-text">9:00:</h2>
 
             </div>
 
 
-            <div class="flex justify-around text-center w-1/2 gap-3 text-lg">
-                <span class="addi-temp">26 C°</span><span class="addi-state"> Clear</span>
+            <div class="flex justify-around  w-1/2 gap-3 text-lg 
+            font-medium text-center">
+                <span class="addi-temp lg:w-44">26 C°</span>
+                <span class="addi-state lg:w-44">Clear</span>
+                <span class="addi-humid hidden lg:block lg:w-44">84%</span>
+                <span class="addi-speed hidden lg:block lg:w-44">3.4</span>
+
 
             </div>
 
         </div>
 
+        <div class="p-8 py-4 border   flex just justify-start items-center gap-8 relative z-0">
 
-        <div class="p-8 py-4 border flex just justify-start items-center gap-5">
+
+
             <img src="img/sun.png" class="w-14" alt="" srcset="">
 
             <div class="w-24 text-xl text-left ">
-
-
                 <h2 class="time-text">9:00:</h2>
 
             </div>
 
 
-            <div class="flex justify-around text-center w-1/2 gap-3 text-lg">
-                <span class="addi-temp">26 C°</span><span class="addi-state"> Clear</span>
+            <div class="flex justify-around  w-1/2 gap-3 text-lg 
+            font-medium text-center">
+                <span class="addi-temp lg:w-44">26 C°</span>
+                <span class="addi-state lg:w-44">Clear</span>
+                <span class="addi-humid hidden lg:block lg:w-44">84%</span>
+                <span class="addi-speed hidden lg:block lg:w-44">3.4</span>
+
 
             </div>
 
         </div>
-
 
     </section>
 </body>
