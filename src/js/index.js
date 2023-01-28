@@ -19,6 +19,8 @@ let currentLocation;
 
 async function getWeatherData(location = "haifa",system,){
     try{
+        localStorage.setItem("lastLocation",location)
+        console.log(localStorage.getItem("lastLocation"));
         let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=${system}&appid=571b06f4d00d62b66717a5e08b78e8bb`)
         let data = await response.json()
 
@@ -127,4 +129,15 @@ function displayData(location,system ){
     } )
 }
 
-displayData("haifa",system)
+
+let lastLocation = localStorage.getItem("lastLocation")
+
+if(lastLocation){
+    displayData(lastLocation,system)
+
+}else{
+    displayData("Jerusalem",system)
+
+}
+
+console.log(lastLocation);
