@@ -2,6 +2,8 @@
 
 Using the OpenWeather api to retrieve weather data 
 
+Was made using Vanilla Javascript and Tailwindcss 
+
 Live here - https://shimshon1.github.io/Weather-App/
 
 
